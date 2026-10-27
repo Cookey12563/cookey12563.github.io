@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookey12563’s Home Page</title>
+
+  <!-- Google site verification -->
+  <meta name="google-site-verification" content="6S-woe-QCbPdiHaPtWXguALHpQUF5B4VNzPGcSo17eo" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/110190880?v=4" />
+
+  <style>
+    :root {
+      --purple: #800080;
+      --purple-light: #a64ca6;
+      --purple-dark: #4b004b;
+      --bg: #120012;
+      --card: #1d0d1d;
+      --text: #f6eef6;
+      --muted: #cbb3cb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(128,0,128,.45), transparent 45%),
+        radial-gradient(circle at 85% 10%, rgba(166,76,166,.35), transparent 40%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 70px 20px 45px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--purple);
+      box-shadow: 0 0 30px rgba(128,0,128,.65);
+      background: #fff;
+    }
+
+    h1 {
+      margin: 20px 0 8px;
+      font-size: clamp(2.2rem, 6vw, 3.6rem);
+      background: linear-gradient(90deg, #fff, var(--purple-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 20px 70px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.7rem;
+      margin: 40px 0 20px;
+    }
+
+    .section-title i {
+      color: var(--purple-light);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .project {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      padding: 18px;
+      background: var(--card);
+      border: 1px solid rgba(166,76,166,.35);
+      border-radius: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: var(--purple-light);
+      box-shadow: 0 12px 30px rgba(128,0,128,.35);
+    }
+
+    .project-icon {
+      flex: 0 0 54px;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      color: white;
+      background: linear-gradient(135deg, var(--purple), var(--purple-light));
+      border-radius: 14px;
+    }
+
+    .project h3 {
+      margin: 0 0 5px;
+      font-size: 1.08rem;
+    }
+
+    .project p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: .68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: rgba(166,76,166,.25);
+      color: var(--purple-light);
+      border: 1px solid rgba(166,76,166,.45);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      border-top: 1px solid rgba(166,76,166,.25);
+    }
+
+    footer a {
+      color: var(--purple-light);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/110190880?v=4" alt="Cookey12563’s profile picture" />
+    <h1>Cookey's Home Page</h1>
+    <p class="tagline">
+      Welcome! This is a collection of my projects, tools, games, and experiments.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> My Projects</h2>
+
+      <div class="projects">
+        <a class="project" href="https://cookey12563.github.io/ACC-PORTAL/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-compass"></i></div>
+          <div>
+            <h3>ACC Portal</h3>
+            <p>A portal project with quick access and navigation.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/Bouncing-Fox-DVD-Screensaver/index.html" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-tv"></i></div>
+          <div>
+            <h3>Fox Screensaver</h3>
+            <p>A bouncing fox DVD-style screensaver.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/EmberTail-NewTab/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-fire"></i></div>
+          <div>
+            <h3>EmberTail Search</h3>
+            <p>A custom new-tab search experience.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/Frostbound-Wiki/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-book"></i></div>
+          <div>
+            <h3>Frostbound Wiki <span class="badge">Beta</span></h3>
+            <p>A wiki for Frostbound information and lore.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/Frostbound-RNG/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-dice"></i></div>
+          <div>
+            <h3>Frostbound RNG <span class="badge">Beta</span></h3>
+            <p>A random-number generator for Frostbound.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/SMM2-CCD/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <div>
+            <h3>Super Mario Maker Two Level Builder</h3>
+            <p>A level-building tool inspired by Super Mario Maker 2.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/Therooms-beta/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-solid fa-door-open"></i></div>
+          <div>
+            <h3>The Rooms <span class="badge">Beta</span></h3>
+            <p>An experimental rooms experience.</p>
+          </div>
+        </a>
+
+        <a class="project" href="https://cookey12563.github.io/Google-Newtab-Alternatives/" target="_blank" rel="noopener">
+          <div class="project-icon"><i class="fa-brands fa-google"></i></div>
+          <div>
+            <h3>Google New Tab Alternatives <span class="badge">No Download</span></h3>
+            <p>Alternatives for a Google new-tab page, with no download required.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with <i class="fa-solid fa-heart" style="color: var(--purple-light);"></i> by Cookey12563</p>
+    <p>
+      <a href="https://github.com/cookey12563" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
